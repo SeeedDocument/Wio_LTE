@@ -50,7 +50,8 @@ The Wio Tracker - LTE is well suited for outdoor projects where the device can c
 ||Precision|<2.5 m CEP|
 |Peripheral|Grove|2 x Grove Digital Port|
 |||2 x Analog Port|
-|||1 x UART||||1 x I2C|
+|||1 x UART|
+|||1 x I2C|
 ||Antenna|2 x LTE Antenna|
 |||1 x GPS Antenna|
 ||Others|USB: Power supply and upload program|
@@ -92,3 +93,44 @@ In brief, Groves is hundreds of sensor that in standard style, which is consist 
 
 !!!Tip
     If you want to use the on-board Grove connector, please use digitalWrite(12, HIGH) to open 3V3_B. Otherwise you can't provide power to Grove modules.
+
+
+## EC21 Module
+
+EC21 contains 10 variants: EC21-E, EC21-A, EC21-V, EC21-AUT, EC21-AUTL, EC21-AUV, EC21-J, EC21-KL, EC21-AU and EC21-CT. This makes it backward-compatible with existing EDGE and GSM/GPRS networks, ensuring that it can easily migrate from LTE to 2G or 3G networks. And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T and T-mobile sim card. If you want to customize EC21 Module for other region, feel free to email us: fae@seeed.cc
+
+|Frequency|EC21-E|EC21-A|EC21-V|EC21-AUT|
+|---|----|---|---|---|
+|FDD-LTE(4G)| B1/ B3/ B5/ B7/ B8/ B20|B2/ B4/ B12|B4/ B8|B1/ B3/ B5/ B7/ B28|
+|TDD-LTE(4G)||
+|WCDMA(3G)|B1/ B5/ B8| B2/ B4/ B5|| B1/ B5|
+|GSM/EDGE(2G)| B3/ B8||||
+|Embedded GNSS| Optional| Optional| Optional| Optional|
+|Wi-Fi Interface| Y| Y| Y| Y|
+|**Region**| EMEA, Korea, Thailand, India| AT&T, T-mobile |Verizon| Telstra|
+|Certification| CE/ GCF/ Vodafone* |FCC/ PTCRB/ AT&T\*/ IC/ ROGERS| FCC/ GCF/ Verizon*|RCM/ Telstra |
+
+|Frequency|EC21-AUTL|EC21-AUV|EC21-AU|EC21-KL|
+|---|----|---|---|---|
+|FDD-LTE(4G)|B3/ B7/ B28|B1/ B3/ B5/ B8/ B28|B1/ B2/ B3/ B4/ B5/ B7/ B8/ B28|B4/ B8|
+|TDD-LTE(4G)|||B40||
+|WCDMA(3G)||B1/ B5/ B8|B1/ B2/ B5/ B8|
+|GSM/EDGE(2G)|||B2/ B3/ B5/ B8||
+|Embedded GNSS| Optional| Optional| Optional| Optional|
+|Wi-Fi Interface| Y| Y| Y| Y|
+|**Region**|Telstra|Vodafone Australia|South America, ANZ, Taiwan|Korea|
+|Certification|RCM/ Telstra|RCM|RCM/ Anatel\*/ NCC\*|KC/ SKT/KT\*/LGU+\*|
+
+|Frequency|EC21-CT|EC21-J|
+|---|----|---|---|---|
+|FDD-LTE(4G)|B1/ B3/ B5/ B7/ B28|B3/ B7/ B28|
+|TDD-LTE(4G)|||
+|WCDMA(3G)|B1/ B5||
+|GSM/EDGE(2G)|||||
+|Embedded GNSS| Optional| Optional| Optional| Optional|
+|Wi-Fi Interface| Y| Y| Y| Y|
+|**Region**|China Telecom|Japan|
+|Certification|CCC\*/ SRRC\*/ CTA\*|JATE/ TELEC/ Softbank\*/ KDDI\*|
+
+\* Under development
+
