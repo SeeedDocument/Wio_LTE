@@ -97,7 +97,9 @@ In brief, Groves is hundreds of sensor that in standard style, which is consist 
 
 ## EC21 Module
 
-EC21 contains 10 variants: EC21-E, EC21-A, EC21-V, EC21-AUT, EC21-AUTL, EC21-AUV, EC21-J, EC21-KL, EC21-AU and EC21-CT. This makes it backward-compatible with existing EDGE and GSM/GPRS networks, ensuring that it can easily migrate from LTE to 2G or 3G networks. And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T and T-mobile sim card. If you want to customize EC21 Module for other region, feel free to email us: fae@seeed.cc
+EC21 contains 10 variants: EC21-E, EC21-A, EC21-V, EC21-AUT, EC21-AUTL, EC21-AUV, EC21-J, EC21-KL, EC21-AU and EC21-CT. This makes it backward-compatible with existing EDGE and GSM/GPRS networks, ensuring that it can easily migrate from LTE to 2G or 3G networks. 
+
+And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T and T-mobile sim card. If you want to customize EC21 Module for other region, feel free to email us: fae@seeed.cc
 
 |Frequency|EC21-E|EC21-A|EC21-V|EC21-AUT|
 |---|----|---|---|---|
@@ -122,7 +124,7 @@ EC21 contains 10 variants: EC21-E, EC21-A, EC21-V, EC21-AUT, EC21-AUTL, EC21-AUV
 |Certification|RCM/ Telstra|RCM|RCM/ Anatel\*/ NCC\*|KC/ SKT/KT\*/LGU+\*|
 
 |Frequency|EC21-CT|EC21-J|
-|---|----|---|---|---|
+|---|----|---|
 |FDD-LTE(4G)|B1/ B3/ B5/ B7/ B28|B3/ B7/ B28|
 |TDD-LTE(4G)|||
 |WCDMA(3G)|B1/ B5||
