@@ -12,7 +12,7 @@ The Wio LTE board is combined with STM32F405RGT6 and Quectel EC21 modem, with wo
 Pinout
 ====
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/img/wio_tracker_lte_v1_pinout.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/wio_tracker_lte_v1_pinout.png?raw=true)
 
 Install USB drive
 ===
@@ -43,11 +43,11 @@ Connect the Wio LTE board to computer using a micro USB cable. On device manager
 
 On the Web IDE click the left top icon, choose Espruino board in the select box.
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/img/wio_tracker_lte_v1_connectWebIDE.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/wio_tracker_lte_v1_connectWebIDE.png?raw=true)
 
 To learn more about the IDE you can follow this tour.
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/img/wio_tracker_lte_v1_WebIDEGuide.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/wio_tracker_lte_v1_WebIDEGuide.png?raw=true)
 
 
 Start writing code!
@@ -319,7 +319,7 @@ For example using ```require("async")```; will make the Web IDE loading the tar.
 
 If you are using a local project folder, the Web IDE will automatically create an empty modules folder inside. Put a module there and you can load it with ```require("myCustomModule");```.
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/img/wio_tracker_lte_v1_projectFiles.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/wio_tracker_lte_v1_projectFiles.png?raw=true)
 
 With default Web IDE configuration, it will look for modules following this order:
 
@@ -475,7 +475,7 @@ Software Updates
 * The Wio LTE board will access DFU mode
 * In system command line type ```dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ***.bin```
 
-![dfu-flash](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/img/wio_tracker_lte_v1_dfu-flash.png?raw=true)
+![dfu-flash](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/img/wio_tracker_lte_v1_dfu-flash.png?raw=true)
 
 Sources
 ====
