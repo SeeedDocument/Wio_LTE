@@ -8,7 +8,7 @@ surveyurl:
 sku:
 ---
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/wio_tracker_lte_1.jpg?raw=true)
+![](https://github.com/SeeedDocument/Wio_LTE/blob/master/wio_tracker_lte_1.jpg?raw=true)
 
 Wio Tracker (Wireless Input Output) is an open source gateway which enable faster IoT GPS solutions. It is Arduino and Grove compatible development boards that helps you track nearly any moving thing on the planet and then upload that data wirelessly. The Wio Tracker - LTE is the LTE version of Wio Tracker, so now we’ve got 2 versions of Wio Tracker, the 2G is like a warm-up product that bring the Wio Tracker series to the world, while the LTE (4G) version is the one that really brings some differences.
 
@@ -87,9 +87,9 @@ In brief, Groves is hundreds of sensor that in standard style, which is consist 
 
 ## Hardware Overview
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/wio_tracker_lte_v1._top.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_LTE/blob/master/wio_tracker_lte_v1._top.png?raw=true)
 
-![](https://github.com/SeeedDocument/Wio_Tracker_LTE/blob/master/wio_tracker_lte_v1_buttom.png?raw=true)
+![](https://github.com/SeeedDocument/Wio_LTE/blob/master/wio_tracker_lte_v1_buttom.png?raw=true)
 
 !!!Tip
     If you want to use the on-board Grove connector, please use digitalWrite(12, HIGH) to open 3V3_B. Otherwise you can't provide power to Grove modules.
