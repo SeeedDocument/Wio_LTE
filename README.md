@@ -71,7 +71,7 @@ Every time you type a command and press enter, it will be executed immediately. 
 
 Remember to enter capital letters where they appear above - JavaScript (and so Espruino) is case-sensitive, so for instance ```digitalwrite``` won't work while ```digitalWrite``` will.
 
-```=undefined``` will be displayed, and pin C6 will be set high, there are 6 ```Grove connecters``` on the Wio LTE board, every connecter has two pins for connecter D3 they'er C6/C7.
+```=undefined``` will be displayed, and pin C6 will be set high, there are 6 ```Grove connecters``` on the Wio LTE board, every connecter has two pins for connecter D3 they're C6/C7.
 
 Now, press the 'up' arrow. This will display the last command you ran, and will show the text digitalWrite(LED1,1) again. Press the left arrow until the cursor moves to the end of 1, press backspace, then press 0. It should now look like this:
 
