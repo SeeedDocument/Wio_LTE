@@ -5,6 +5,8 @@ Wio LTE board - Building IoT project with Javascript
 
 The Wio LTE board is combined with STM32F405RGT6 and Quectel EC21 modem, with worldwide LTE, UMTS/HSPA+ and GSM/GPRS/EDGE coverage.
 
+You can buy the board at our [Bazar page](https://www.seeedstudio.com/Wio-LTE-US-Version-4G%2C-Cat.1%2C-GNSS%2C-Espruino-Compatible-p-2957.html)
+
 ![](https://github.com/SeeedDocument/Wio_LTE/blob/master/wio_tracker_lte_1.jpg?raw=true)
 
 
