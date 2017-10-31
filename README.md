@@ -444,7 +444,7 @@ setInterval(function() {
 ```
 
 Grove Servo
-```
+```javascript
 /* 
 position start form 0.00 to 1.00
 */
