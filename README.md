@@ -387,8 +387,29 @@ b.freq(1000,1000);
 
 Grove Temperature Sensor
 ```javascript
+/*
+Official js module is at http://www.espruino.com/modules/GroveTemperature.js.
+It's different that the official js module takes 5V as the module's power supply, 
+but WioLTE uses 3.3V as power supply. Change var resistance=(1-a)*10000/a*3.3/5 to 
+var resistance=(1-a)*10000/a;;
+*/
+var GroveTemperature = function(pins) {
+  this.B=3975; // B value of the thermistor
+  this.p = pins[0];
+  // Get the temperature in degrees C
+  this.get = function(){
+    var a = analogRead(this.p);
+    // get the resistance of the sensor;
+    var resistance=(1-a)*10000/a; 
+    // convert to temperature via datasheet 
+    var temperature=1/(Math.log(resistance/10000)/this.B+1/298.15)-273.15;
+    return temperature;
+  };
+  return this;
+};
+
 WioLTE.setGrovePower(true);
-var t = new (require("GroveTemperature"))(WioLTE.A4);
+var t = GroveTemperature(WioLTE.A4);
 console.log(t.get());
 ```
 
