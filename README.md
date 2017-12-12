@@ -189,6 +189,10 @@ function wiolteStart(debug_quectel, debug_at) {
 function doConnect() {
   board.connect(APN, USERNAME, PASSWORD, function(err) {
     console.log("connectCB entered...");
+  
+    // Start event - fetch longitude, latitude every 10 s
+    board.geoLocStart(10000);
+    
     if (err) throw err;
     board.getIP(print);
 
@@ -211,9 +215,6 @@ function onConnected(){
       console.log(':', sms.text);
     });
   });
-
-  // fetch longitude, latitude every 10 s
-  board.geoLocStart(10000);
 
   GetHtmlPage("http://www.pur3.co.uk/hello.txt");
 }
@@ -245,6 +246,9 @@ function GeoLoc() {
 
 wiolteStart();
 ```
+Some logs will come out like below, when **Geolocalization error : +CME ERROR: 516** stop putting out, type **GeoLoc()** to get location data.
+
+![](./img/wio_tracker_lte_demo_lte_gps.png)
 
 Once initialised with:
 
